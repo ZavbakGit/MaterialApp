@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:tools = "http://schemas.android.com/tools"
+        xmlns:app = "http://schemas.android.com/apk/res-auto"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        app:layout_behavior = "@string/appbar_scrolling_view_behavior"
+        tools:showIn = "@layout/activity_button"
+        tools:context = ".ButtonActivity">
+
+    <Button
+            android:id = "@+id/flatButtonOutLibe"
+            style = "@style/ButtonBorder.Accent"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_marginTop = "24dp"
+            android:padding = "15dp"
+
+            android:text = "FLAT BUTTON OUTLINE"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent" />
+
+    <Button
+            android:id="@+id/flatButt"
+            style = "?android:attr/borderlessButtonStyle"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_marginTop = "24dp"
+            android:text = "FLAT BUTTON"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toBottomOf="@+id/flatButtonOutLibe" />
+
+    <Button
+        android:padding="15dp"
+        android:elevation="15dp"
+        android:id = "@+id/buttonRaised"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop = "24dp"
+        android:text = "RAISED BUTTON"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toBottomOf = "@+id/flatButt" />
+
+    <Button
+            style="@style/RaisedButton"
+            android:padding="15dp"
+            android:elevation="15dp"
+            android:id = "@+id/button"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_marginTop = "24dp"
+            android:text = "RAISED BUTTON"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toBottomOf = "@+id/buttonRaised" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
