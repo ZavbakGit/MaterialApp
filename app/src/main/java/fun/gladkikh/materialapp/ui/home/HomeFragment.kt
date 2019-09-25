@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import `fun`.gladkikh.materialapp.R
+import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment() {
 
@@ -26,6 +27,23 @@ class HomeFragment : Fragment() {
         homeViewModel.text.observe(this, Observer {
             textView.text = it
         })
+
+
+
         return root
+    }
+
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        btHide.setOnClickListener {
+            progressBarHorisontal.visibility = View.INVISIBLE
+            progressBar.visibility = View.INVISIBLE
+        }
+
+        btShow.setOnClickListener {
+            progressBarHorisontal.visibility = View.VISIBLE
+            progressBar.visibility = View.VISIBLE
+        }
     }
 }

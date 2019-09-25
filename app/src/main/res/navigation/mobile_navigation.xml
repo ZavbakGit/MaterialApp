@@ -12,9 +12,9 @@
             tools:layout = "@layout/fragment_home" />
 
     <fragment
-            android:id = "@+id/nav_gallery"
+            android:id = "@+id/my_item"
             android:name = "fun.gladkikh.materialapp.ui.gallery.GalleryFragment"
-            android:label = "@string/menu_gallery"
+            android:label = "@string/menu_item"
             tools:layout = "@layout/fragment_gallery" />
 
     <fragment
